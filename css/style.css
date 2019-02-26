@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(31, 76, 134), rgba(35, 218, 187, 0.342));
+}
+
+.panel {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 85vh;
+    width: 60%;
+    min-width: 300px;
+    max-width: 1500px;
+    background-color: rgb(255, 255, 255);
+    background-color: transparent;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.panel div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    flex-basis: 32%;
+    background-color: rgb(101, 71, 110);
+    box-sizing: border-box;
+}
+
+div.result {
+    display: flex;
+    height: 15vh;
+    background-color: rgb(0, 0, 0);
+    flex-basis: 100%;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+.panel div:nth-child(18) {
+    flex-basis: 47%;
+}
+
+.panel div:nth-child(17) {
+    flex-basis: 47%;
+}
+
+div.result~div:hover {
+    background-color: rgb(49, 84, 95);
+    cursor: pointer;
+}
